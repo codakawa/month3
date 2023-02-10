@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .block {
+            position: relative;
+            width: 500px;
+            height: 50px;
+            border: 1px solid;
+            margin-top: 50px;
+        }
+        .box {
+            position: absolute;
+            width: 50px;
+            height: 50px;
+            background-color: red;
+        }
+        .startAnim {
+            margin-top: 75px;
+        }
+    </style>
+</head>
+<body>
+    <div class="cont">
+        <label for="input">ИНН</label>
+        <input type="text" id="input" placeholder="20102199100001">
+        <button id="checkBtn">Проверить</button>
+        <span class="result"></span>
+    </div>
+    
+    <div class="block">
+        <div class="box"></div>
+        <button class="startAnim">Старт</button>
+    </div>
+    
+</body>
+<script src="app.js"></script>
+</html>
