@@ -1,0 +1,17 @@
+.cont {
+    background-color: grey;
+    display: flex;
+    justify-content: space-between;
+}
+
+button {
+    background-color: yellow;
+    width: 100px;
+    height: 70px;
+    margin: 10px 10px;
+    cursor: pointer;
+}
+
+.red {
+    background-color: red;
+}
