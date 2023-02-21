@@ -82,7 +82,7 @@ setTimeout(openModal, 3000)
 
 // ------------------------------------
 
-const deadLine = "2023-02-18 15:00"
+const deadLine = "2023-02-20 15:00"
 
 
 function getTimeRemaining(deadLine) {
