@@ -4,6 +4,7 @@ const tabContent = document.querySelectorAll(".tabcontent");
 const modal = document.querySelector(".modal");
 const modalBtns = document.querySelectorAll(".btn_dark, .btn_white")
 const closeModalBtn = document.querySelector(".modal__close");
+let modalOpenedAlredy = false;
 let currentTab = 0;
 
 const updateTabContent = (i = 0) => {
@@ -73,7 +74,8 @@ window.onkeydown = (e) => {
 window.addEventListener('scroll', () => {
     let currentHeight = document.documentElement.scrollHeight - window.scrollY;
 
-    if(currentHeight === document.documentElement.clientHeight) {
+    if(currentHeight === document.documentElement.clientHeight && !modalOpenedAlredy) {
+        modalOpenedAlredy = true;
         openModal();
     }
 })
@@ -82,7 +84,7 @@ setTimeout(openModal, 3000)
 
 // ------------------------------------
 
-const deadLine = "2023-02-18 15:00"
+const deadLine = "2023-04-18 15:00"
 
 
 function getTimeRemaining(deadLine) {
